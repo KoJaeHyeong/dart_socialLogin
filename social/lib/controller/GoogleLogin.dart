@@ -30,6 +30,7 @@ class GoogleController {
     router.post('/login', (Request req) async {
       var loginModel = await model();
       var param = await req.readAsString();
+      print(param);
       var body = jsonDecode(param);
       var email = body['email'];
       var password = body['password'];

@@ -54,7 +54,7 @@ class LoginModel {
     if (query.isNotEmpty) {
       result = '로그인 완료';
     } else {
-      result = '회원정보가 올바르지 않습니다';
+      result = '로그인 실패';
     }
 
     return result;
